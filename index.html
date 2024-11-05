@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея слайдер</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="gallery-slider">
+      <div class="gallery-slide">
+        <img src="1.png" alt="Image 1">
+      </div>
+      <div class="gallery-slide">
+        <img src="2.png" alt="Image 2">
+      </div>
+      <div class="gallery-slide">
+        <img src="3.webp" alt="Image 3">
+      </div>
+      <div class="gallery-slide">
+        <img src="4.jpg" alt="Image 4">
+      </div>
+      <div class="gallery-slide">
+        <img src="5.jpg" alt="Image 5">
+      </div>
+      <div class="gallery-slide">
+        <img src="6.jpg" alt="Image 6">
+      </div>
+      <div class="gallery-slide">
+        <img src="7.jpg" alt="Image 7">
+      </div>
+      <div class="gallery-slide">
+        <img src="8.png" alt="Image 8">
+      </div>
+    </div>
+    <button class="arrow left">←</button>
+    <button class="arrow right">→</button>
+
+    <div class="dot-indicators">
+        <span class="dot active" onclick="showSlide(0)"></span>
+        <span class="dot" onclick="showSlide(1)"></span>
+        <span class="dot" onclick="showSlide(2)"></span>
+        <span class="dot" onclick="showSlide(3)"></span>
+        <span class="dot" onclick="showSlide(4)"></span>
+        <span class="dot" onclick="showSlide(5)"></span>
+        <span class="dot" onclick="showSlide(6)"></span>
+        <span class="dot" onclick="showSlide(7)"></span>
+        
+    </div>
+  </div>
+</body>
+</html>

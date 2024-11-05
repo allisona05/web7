@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .gallery-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  
+  }
+  
+  .gallery-slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-slide {
+    min-width: 33.33%; /* для 3 изображений на десктопе */
+  }
+  
+  .gallery-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .arrow.left {
+    left: 10px;
+  }
+  
+  .arrow.right {
+    right: 10px;
+  }
+  
+  /* Стили для контейнера точек-индикаторов */
+  .dot-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  /* Стили для точки */
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Стили для активной точки */
+  .dot.active {
+    background-color: purple;
+  }
+  
+  @media (max-width: 600px) {
+    .gallery-slide {
+      min-width: 100%; /* одно изображение на смартфоне */
+    }
+  }
+  
